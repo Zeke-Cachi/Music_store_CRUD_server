@@ -12,15 +12,6 @@ const connect = async () => {
     }
 }
 
-const connectUser = async () => {
-    try {
-        await mongoose.createConnection(process.env.USERS_DB_CONNECT)
-        console.log('Conectaste a la red musical n° 2')
-    } catch {
-        console.log('no se pudo conectar a los usuarios')
-    }
-}
 
-
-module.exports = {connect, connectUser}
+module.exports = {connect}
 
