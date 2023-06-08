@@ -15,7 +15,7 @@ const apiRouter = require('./routes/api');
 //USE METHODS
 app.use(express.json());
 app.use(logger('dev'));
-app.use(cors());
+app.use(cors({ origin: '*' }));
 
 
 app.use('/', indexRouter)
